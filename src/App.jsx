@@ -129,7 +129,6 @@ export default function App() {
           </div>
         </div>
       </div>
-      <h3 className="footer">Made with 💗 by Gaurav</h3>
     </div>
   );
 }
