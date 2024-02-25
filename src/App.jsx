@@ -18,13 +18,17 @@ export default function App() {
   const newInputDone = useRef(null);
 
   const handleNewCard = (status, inputRef) => {
-    const newCardData = {
-      id: data.length + 1,
-      title: inputRef.current.value,
-      status: status,
-    };
-    setData([...data, newCardData]);
-    inputRef.current.value = "";
+    if (inputRef.current.value !== "") {
+      const newCardData = {
+        id: data.length + 1,
+        title: inputRef.current.value,
+        status: status,
+      };
+      setData([...data, newCardData]);
+      inputRef.current.value = "";
+    } else {
+      return;
+    }
   };
 
   const handleUpdateStatus = (id, updatedStatus) => {
