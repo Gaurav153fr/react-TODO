@@ -1,0 +1,129 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: #191919;
+  color: white;
+}
+.App {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  justify-content: space-around;
+}
+.container > div {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.not-started {
+  height: fit-content;
+  background-color: #241e1c;
+  padding: 5px;
+}
+.doing {
+  background-color: #221f18;
+  padding: 5px;
+}
+.done {
+  background-color: #1c2220;
+  padding: 5px;
+}
+.card {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 1px;
+  display: flex;
+  height: 50px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.card > select {
+  width: 10%;
+  height: 50%;
+  background-color: #fcfcfc35;
+  color: black;
+
+  border: none;
+  border-radius: 5px;
+}
+.a {
+  background-color: #3e2720;
+}
+.a:hover {
+  background-color: #522c21;
+}
+.b {
+  background-color: #3f341d;
+}
+.b:hover {
+  background-color: #544519;
+}
+.c {
+  background-color: #21322a;
+}
+.c:hover {
+  background-color: #1f3f30;
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    grid-template-columns: 100%;
+  }
+}
+.input {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-items: center;
+}
+.input > input {
+  width: 100%;
+  height: 50px;
+
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
+  color: wheat;
+}
+.input button {
+  font-weight: 600;
+  height: 50px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: #4342426c;
+  color: white;
+}
+.delete {
+  color: red;
+}
+.footer {
+  text-align: center;
+  width: 100%;
+}
+.header {
+  width: 100%;
+  text-align: center;
+}
