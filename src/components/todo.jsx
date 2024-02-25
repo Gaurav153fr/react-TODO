@@ -2,7 +2,6 @@ import React from "react";
 
 export default function TodoCard({ data, style, onUpdateStatus }) {
   const { id, title, status } = data;
-
   const handleStatusChange = (event) => {
     const newStatus = event.target.value;
     onUpdateStatus(id, newStatus);

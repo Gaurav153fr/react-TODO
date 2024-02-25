@@ -38,7 +38,7 @@ export default function App() {
     setData(updatedData);
   };
   useEffect(() => {
-    if (data.length != 0) {
+    if (data.length !== 0) {
       localStorage.setItem("todoData", JSON.stringify(data));
     }
   }, [data]);
