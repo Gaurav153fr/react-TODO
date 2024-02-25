@@ -29,11 +29,7 @@ ul {
   list-style: none;
   padding: 0;
 }
-.not-started > ul {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
+
 .not-started {
   height: fit-content;
   background-color: #241e1c;
